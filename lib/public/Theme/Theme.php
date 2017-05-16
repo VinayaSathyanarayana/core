@@ -20,6 +20,10 @@
  */
 namespace OCP\Theme;
 
+/**
+ * @package OCP\Theme
+ * @since 10.0.1
+ */
 class Theme {
 
 	/**
@@ -41,6 +45,7 @@ class Theme {
 	 * @param string $name
 	 * @param string $directory
 	 * @param string $webPath
+	 * @since 10.0.1
 	 */
 	public function __construct($name = '', $directory = '', $webPath = '') {
 		$this->name = $name;
@@ -50,6 +55,7 @@ class Theme {
 
 	/**
 	 * @return string
+	 * @since 10.0.1
 	 */
 	public function getName() {
 		return $this->name;
@@ -57,6 +63,7 @@ class Theme {
 
 	/**
 	 * @return string
+	 * @since 10.0.1
 	 */
 	public function getDirectory() {
 		return $this->directory;
@@ -64,6 +71,7 @@ class Theme {
 
 	/**
 	 * @return string
+	 * @since 10.0.1
 	 */
 	public function getWebPath() {
 		return $this->webPath;
@@ -71,6 +79,7 @@ class Theme {
 
 	/**
 	 * @param string $name
+	 * @since 10.0.1
 	 */
 	public function setName($name) {
 		$this->name = $name;
@@ -78,6 +87,7 @@ class Theme {
 
 	/**
 	 * @param string $directory
+	 * @since 10.0.1
 	 */
 	public function setDirectory($directory) {
 		$this->directory = $directory;
@@ -85,6 +95,7 @@ class Theme {
 
 	/**
 	 * @param string $webPath
+	 * @since 10.0.1
 	 */
 	public function setWebPath($webPath) {
 		$this->webPath = $webPath;

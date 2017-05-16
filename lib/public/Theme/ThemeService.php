@@ -20,6 +20,10 @@
  */
 namespace OCP\Theme;
 
+/**
+ * @package OCP\Theme
+ * @since 10.0.1
+ */
 class ThemeService {
 
 	/**
@@ -33,6 +37,7 @@ class ThemeService {
 	/**
 	 * @param string $themeName
 	 * @param string $defaultThemeDirectory
+	 * @since 10.0.1
 	 */
 	public function __construct($themeName = '', $defaultThemeDirectory = '') {
 		$this->setDefaultThemeDirectory($defaultThemeDirectory);
@@ -46,6 +51,7 @@ class ThemeService {
 
 	/**
 	 * @param string $defaultThemeDirectory
+	 * @since 10.0.1
 	 */
 	private function setDefaultThemeDirectory($defaultThemeDirectory = '') {
 		if ($defaultThemeDirectory === '') {
@@ -59,6 +65,7 @@ class ThemeService {
 	 * Returns whether the default legacy theme exists.
 	 *
 	 * @return bool
+	 * @since 10.0.1
 	 */
 	private function defaultThemeExists() {
 		if (is_dir($this->defaultThemeDirectory)) {
@@ -72,6 +79,7 @@ class ThemeService {
 	 * Returns the theme that is currently in use.
 	 *
 	 * @return Theme
+	 * @since 10.0.1
 	 */
 	public function getTheme() {
 		return $this->theme;
@@ -81,6 +89,7 @@ class ThemeService {
 	 * Loads the given app as a theme.
 	 *
 	 * @param string $themeName
+	 * @since 10.0.1
 	 */
 	public function setAppTheme($themeName = '') {
 		$this->theme = $this->makeTheme($themeName, true, $this->getTheme());
@@ -93,6 +102,7 @@ class ThemeService {
 	 * @param bool $appTheme
 	 * @param Theme $theme
 	 * @return Theme
+	 * @since 10.0.1
 	 */
 	private function makeTheme($themeName, $appTheme = true, Theme $theme = null) {
 		$directory = $this->getDirectory($themeName, $appTheme);
@@ -119,6 +129,7 @@ class ThemeService {
 	 * @param string $themeName
 	 * @param bool $appTheme
 	 * @return string
+	 * @since 10.0.1
 	 */
 	private function getDirectory($themeName, $appTheme = true) {
 		if ($themeName !== '') {
@@ -137,6 +148,7 @@ class ThemeService {
 	 * @param $themeName
 	 * @param bool $appTheme
 	 * @return false|string
+	 * @since 10.0.1
 	 */
 	private function getWebPath($themeName, $appTheme = true) {
 		if ($themeName !== '') {
@@ -154,6 +166,7 @@ class ThemeService {
 	 * Returns an array of all app and legacy themes as an array of Theme objects.
 	 *
 	 * @return Theme[]
+	 * @since 10.0.1
 	 */
 	public function getAllThemes() {
 		return array_merge($this->getAllAppThemes(), $this->getAllLegacyThemes());
@@ -161,6 +174,7 @@ class ThemeService {
 
 	/**
 	 * @return Theme[]
+	 * @since 10.0.1
 	 */
 	private function getAllAppThemes() {
 		$themes = [];
@@ -174,6 +188,7 @@ class ThemeService {
 
 	/**
 	 * @return Theme[]
+	 * @since 10.0.1
 	 */
 	private function getAllLegacyThemes() {
 		$themes = [];
@@ -197,6 +212,7 @@ class ThemeService {
 	 *
 	 * @param string $themeName
 	 * @return Theme|false
+	 * @since 10.0.1
 	 */
 	public function findTheme($themeName) {
 		$allThemes = $this->getAllThemes();
