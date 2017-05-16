@@ -30,7 +30,7 @@
  */
 
 namespace OC;
-use OC\Theme\Theme;
+use OCP\Theme\Theme;
 use OC_Defaults;
 use OCP\ICacheFactory;
 use OCP\IConfig;

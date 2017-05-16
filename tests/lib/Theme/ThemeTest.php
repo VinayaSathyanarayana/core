@@ -2,7 +2,7 @@
 
 namespace Test\Theme;
 
-use OC\Theme\Theme;
+use OCP\Theme\Theme;
 
 class ThemeTest extends \PHPUnit\Framework\TestCase {
 

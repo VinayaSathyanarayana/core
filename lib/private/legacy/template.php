@@ -37,7 +37,7 @@
  */
 
 use OC\TemplateLayout;
-use OC\Theme\Theme;
+use OCP\Theme\Theme;
 
 require_once __DIR__.'/template/functions.php';
 

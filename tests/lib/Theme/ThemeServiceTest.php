@@ -2,7 +2,7 @@
 
 namespace Test\Theme;
 
-use OC\Theme\ThemeService;
+use OCP\Theme\ThemeService;
 use org\bovigo\vfs\vfsStream;
 use org\bovigo\vfs\vfsStreamDirectory;
 

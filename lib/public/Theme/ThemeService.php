@@ -1,6 +1,5 @@
 <?php
 /**
- * @author Philipp Schaffrath <github@philippschaffrath.de>
  * @author Philipp Schaffrath <github@philipp.schaffrath.email>
  *
  * @copyright Copyright (c) 2017, ownCloud GmbH
@@ -19,7 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  *
  */
-namespace OC\Theme;
+namespace OCP\Theme;
 
 class ThemeService {
 
@@ -32,8 +31,6 @@ class ThemeService {
 	private $defaultThemeDirectory;
 
 	/**
-	 * ThemeService constructor.
-	 *
 	 * @param string $themeName
 	 * @param string $defaultThemeDirectory
 	 */
@@ -59,6 +56,8 @@ class ThemeService {
 	}
 
 	/**
+	 * Returns whether the default legacy theme exists.
+	 *
 	 * @return bool
 	 */
 	private function defaultThemeExists() {
@@ -70,6 +69,8 @@ class ThemeService {
 	}
 
 	/**
+	 * Returns the theme that is currently in use.
+	 *
 	 * @return Theme
 	 */
 	public function getTheme() {
@@ -77,6 +78,8 @@ class ThemeService {
 	}
 
 	/**
+	 * Loads the given app as a theme.
+	 *
 	 * @param string $themeName
 	 */
 	public function setAppTheme($themeName = '') {
@@ -84,6 +87,8 @@ class ThemeService {
 	}
 
 	/**
+	 * Sets all necessary parameters on the given or a new Theme object and returns it.
+	 *
 	 * @param string $themeName
 	 * @param bool $appTheme
 	 * @param Theme $theme
@@ -109,6 +114,8 @@ class ThemeService {
 	}
 
 	/**
+	 * Gets the directory of a theme by its name.
+	 *
 	 * @param string $themeName
 	 * @param bool $appTheme
 	 * @return string
@@ -125,6 +132,8 @@ class ThemeService {
 	}
 
 	/**
+	 * Gets the webpath of a theme by its name.
+	 *
 	 * @param $themeName
 	 * @param bool $appTheme
 	 * @return false|string
@@ -142,6 +151,8 @@ class ThemeService {
 	}
 
 	/**
+	 * Returns an array of all app and legacy themes as an array of Theme objects.
+	 *
 	 * @return Theme[]
 	 */
 	public function getAllThemes() {
@@ -182,6 +193,8 @@ class ThemeService {
 	}
 
 	/**
+	 * Returns a Theme object regarding to the given theme name.
+	 *
 	 * @param string $themeName
 	 * @return Theme|false
 	 */

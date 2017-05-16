@@ -178,7 +178,7 @@ class OC_App {
 	 */
 	private static function enableThemeIfApplicable($app) {
 		if (self::isType($app, 'theme')) {
-			/** @var \OC\Theme\ThemeService $themeManager */
+			/** @var \OCP\Theme\ThemeService $themeManager */
 			$themeManager = \OC::$server->query('ThemeService');
 			$themeManager->setAppTheme($app);
 		}

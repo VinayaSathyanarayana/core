@@ -1,6 +1,5 @@
 <?php
 /**
- * @author Philipp Schaffrath <github@philippschaffrath.de>
  * @author Philipp Schaffrath <github@philipp.schaffrath.email>
  *
  * @copyright Copyright (c) 2017, ownCloud GmbH
@@ -19,7 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  *
  */
-namespace OC\Theme;
+namespace OCP\Theme;
 
 class Theme {
 

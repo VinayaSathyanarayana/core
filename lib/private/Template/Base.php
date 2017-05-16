@@ -30,7 +30,7 @@
 
 namespace OC\Template;
 
-use OC\Theme\Theme;
+use OCP\Theme\Theme;
 
 class Base {
 	/**
