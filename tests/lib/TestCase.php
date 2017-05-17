@@ -412,6 +412,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase {
 		} catch (\OCP\Lock\LockedException $e) {
 			// we could not acquire the counter-lock, which means
 			// the lock of $type was in place
+			echo "TestCase::isFileLocked -> {$e->getMessage()}";
 			return true;
 		}
 	}
