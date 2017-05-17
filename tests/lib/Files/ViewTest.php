@@ -1814,7 +1814,9 @@ class ViewTest extends TestCase {
 				}
 			));
 
-		$this->assertNull($this->getFileLockType($view, $lockedPath), 'File not locked before operation');
+		$lp = \OC::$server->getLockingProvider();
+		$lp = get_class($lp);
+		$this->assertNull($this->getFileLockType($view, $lockedPath), "File not locked before operation ($lp)");
 
 		$this->connectMockHooks($hookType, $view, $lockedPath, $lockTypePre, $lockTypePost);
 
