@@ -125,6 +125,7 @@ class ViewTest extends TestCase {
 		$mountProviderCollection = \OC::$server->getMountProviderCollection();
 		TestCase::invokePrivate($mountProviderCollection, 'providers', [[]]);
 
+		\OC::$server->getLockingProvider()->releaseAll();
 		parent::tearDown();
 	}
 
@@ -1814,8 +1815,7 @@ class ViewTest extends TestCase {
 				}
 			));
 
-		$lp = \OC::$server->getLockingProvider();
-		$lp = get_class($lp);
+		$lp = get_class(\OC::$server->getLockingProvider());
 		$this->assertNull($this->getFileLockType($view, $lockedPath), "File not locked before operation ($lp)");
 
 		$this->connectMockHooks($hookType, $view, $lockedPath, $lockTypePre, $lockTypePost);
