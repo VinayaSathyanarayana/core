@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e58f3414934ab1ea7f5cd2813eb61e63",
+    "content-hash": "b4d7b0bdfb8d5730c1f9b61ab3e24f5d",
     "packages": [
         {
             "name": "bantu/ini-get-wrapper",
@@ -851,6 +851,7 @@
                 }
             ],
             "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
+            "abandoned": true,
             "time": "2015-05-20T03:37:09+00:00"
         },
         {
@@ -901,6 +902,7 @@
                 "Guzzle",
                 "stream"
             ],
+            "abandoned": true,
             "time": "2014-10-12T19:18:40+00:00"
         },
         {
@@ -998,7 +1000,7 @@
             "time": "2015-08-01T16:27:37+00:00"
         },
         {
-            "name": "jeremeamia/SuperClosure",
+            "name": "jeremeamia/superclosure",
             "version": "2.1.0",
             "source": {
                 "type": "git",
@@ -1053,6 +1055,7 @@
                 "serialize",
                 "tokenizer"
             ],
+            "abandoned": "opis/closure",
             "time": "2015-03-11T20:06:43+00:00"
         },
         {
@@ -1171,6 +1174,7 @@
                 "php",
                 "tags"
             ],
+            "abandoned": true,
             "time": "2016-04-04T09:34:50+00:00"
         },
         {
@@ -1226,7 +1230,7 @@
             "time": "2016-02-17T22:47:09+00:00"
         },
         {
-            "name": "natxet/CssMin",
+            "name": "natxet/cssmin",
             "version": "v3.0.4",
             "source": {
                 "type": "git",
@@ -1410,6 +1414,7 @@
                 "javascript",
                 "minification"
             ],
+            "abandoned": true,
             "time": "2016-04-19T09:28:22+00:00"
         },
         {
@@ -1469,20 +1474,21 @@
                 "utf-8",
                 "utf8"
             ],
+            "abandoned": "symfony/polyfill-mbstring or symfony/string",
             "time": "2016-05-18T13:57:10+00:00"
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.2",
+            "version": "1.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "bdd47347df76dbaa89227c5e1afd6f6809985b4c"
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/bdd47347df76dbaa89227c5e1afd6f6809985b4c",
-                "reference": "bdd47347df76dbaa89227c5e1afd6f6809985b4c",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/2b87b41178cc6d4ad3cba678a46a1cae49786011",
+                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011",
                 "shasum": ""
             },
             "require": {
@@ -1493,8 +1499,8 @@
                 "phpunit/phpunit": "*"
             },
             "suggest": {
-                "ext-bz2": "bz2 compression support.",
-                "ext-xz": "lzma2 compression support.",
+                "ext-bz2": "Bz2 compression support.",
+                "ext-xz": "Lzma2 compression support.",
                 "ext-zlib": "Gzip compression support."
             },
             "type": "library",
@@ -1529,13 +1535,23 @@
                     "email": "mrook@php.net"
                 }
             ],
-            "description": "Tar file management class",
+            "description": "Tar file management class with compression support (gzip, bzip2, lzma2)",
             "homepage": "https://github.com/pear/Archive_Tar",
             "keywords": [
                 "archive",
                 "tar"
             ],
-            "time": "2016-02-25T10:30:39+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/mrook",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/michielrook",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-02-16T10:50:50+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -2038,12 +2054,12 @@
             "version": "3.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fruux/sabre-dav.git",
+                "url": "https://github.com/sabre-io/dav.git",
                 "reference": "e987775e619728f12205606c9cc3ee565ffb1516"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-dav/zipball/e987775e619728f12205606c9cc3ee565ffb1516",
+                "url": "https://api.github.com/repos/sabre-io/dav/zipball/e987775e619728f12205606c9cc3ee565ffb1516",
                 "reference": "e987775e619728f12205606c9cc3ee565ffb1516",
                 "shasum": ""
             },
@@ -2121,12 +2137,12 @@
             "version": "3.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fruux/sabre-event.git",
+                "url": "https://github.com/sabre-io/event.git",
                 "reference": "831d586f5a442dceacdcf5e9c4c36a4db99a3534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-event/zipball/831d586f5a442dceacdcf5e9c4c36a4db99a3534",
+                "url": "https://api.github.com/repos/sabre-io/event/zipball/831d586f5a442dceacdcf5e9c4c36a4db99a3534",
                 "reference": "831d586f5a442dceacdcf5e9c4c36a4db99a3534",
                 "shasum": ""
             },
@@ -2178,12 +2194,12 @@
             "version": "4.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fruux/sabre-http.git",
+                "url": "https://github.com/sabre-io/http.git",
                 "reference": "dd50e7260356f4599d40270826f9548b23efa204"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-http/zipball/dd50e7260356f4599d40270826f9548b23efa204",
+                "url": "https://api.github.com/repos/sabre-io/http/zipball/dd50e7260356f4599d40270826f9548b23efa204",
                 "reference": "dd50e7260356f4599d40270826f9548b23efa204",
                 "shasum": ""
             },
@@ -2234,12 +2250,12 @@
             "version": "1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fruux/sabre-uri.git",
+                "url": "https://github.com/sabre-io/uri.git",
                 "reference": "ada354d83579565949d80b2e15593c2371225e61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-uri/zipball/ada354d83579565949d80b2e15593c2371225e61",
+                "url": "https://api.github.com/repos/sabre-io/uri/zipball/ada354d83579565949d80b2e15593c2371225e61",
                 "reference": "ada354d83579565949d80b2e15593c2371225e61",
                 "shasum": ""
             },
@@ -2285,12 +2301,12 @@
             "version": "4.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fruux/sabre-vobject.git",
+                "url": "https://github.com/sabre-io/vobject.git",
                 "reference": "d0fde2fafa2a3dad1f559c2d1c2591d4fd75ae3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-vobject/zipball/d0fde2fafa2a3dad1f559c2d1c2591d4fd75ae3c",
+                "url": "https://api.github.com/repos/sabre-io/vobject/zipball/d0fde2fafa2a3dad1f559c2d1c2591d4fd75ae3c",
                 "reference": "d0fde2fafa2a3dad1f559c2d1c2591d4fd75ae3c",
                 "shasum": ""
             },
@@ -2382,12 +2398,12 @@
             "version": "1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fruux/sabre-xml.git",
+                "url": "https://github.com/sabre-io/xml.git",
                 "reference": "59b20e5bbace9912607481634f97d05a776ffca7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fruux/sabre-xml/zipball/59b20e5bbace9912607481634f97d05a776ffca7",
+                "url": "https://api.github.com/repos/sabre-io/xml/zipball/59b20e5bbace9912607481634f97d05a776ffca7",
                 "reference": "59b20e5bbace9912607481634f97d05a776ffca7",
                 "shasum": ""
             },
@@ -3417,6 +3433,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -3621,6 +3638,7 @@
                     "homepage": "http://www.acci.cz"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2014-04-08T15:00:19+00:00"
         },
         {
@@ -3665,6 +3683,7 @@
                     "homepage": "http://www.acci.cz/"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
@@ -3712,6 +3731,7 @@
             ],
             "description": "This tool check syntax of PHP files about 20x faster than serial check.",
             "homepage": "https://github.com/JakubOnderka/PHP-Parallel-Lint",
+            "abandoned": "php-parallel-lint/php-parallel-lint",
             "time": "2015-12-15T10:42:16+00:00"
         },
         {
@@ -3754,16 +3774,16 @@
             "time": "2016-01-26T17:05:07+00:00"
         },
         {
-            "name": "mikey179/vfsStream",
+            "name": "mikey179/vfsstream",
             "version": "v1.6.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mikey179/vfsStream.git",
+                "url": "https://github.com/bovigo/vfsStream.git",
                 "reference": "0247f57b2245e8ad2e689d7cee754b45fbabd592"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/0247f57b2245e8ad2e689d7cee754b45fbabd592",
+                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/0247f57b2245e8ad2e689d7cee754b45fbabd592",
                 "reference": "0247f57b2245e8ad2e689d7cee754b45fbabd592",
                 "shasum": ""
             },
@@ -4360,6 +4380,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2017-02-27T10:12:30+00:00"
         },
         {
@@ -4501,6 +4522,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2016-12-08T20:27:08+00:00"
         },
         {
@@ -5646,12 +5668,12 @@
             "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "2db61e59ff05fe5126d152bd0655c9ea113e550f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/2db61e59ff05fe5126d152bd0655c9ea113e550f",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/2db61e59ff05fe5126d152bd0655c9ea113e550f",
                 "reference": "2db61e59ff05fe5126d152bd0655c9ea113e550f",
                 "shasum": ""
             },
@@ -5741,6 +5763,7 @@
                 "code",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2016-04-20T17:26:42+00:00"
         },
         {
@@ -5795,18 +5818,18 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2016-12-19T21:47:12+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "swiftmailer/swiftmailer": 0
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.4.1"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
